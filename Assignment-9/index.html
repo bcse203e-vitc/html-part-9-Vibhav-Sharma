@@ -1,1 +1,97 @@
+<html>
+<html lang="en">
+<head>
+  <title>Appointment Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="animated-bg"></div>
+  <div class="container">
+      <header>
+    <h1>Aapka hamare appointment system me tahe dil se swaagat hai</h1>
+  </header>
+
+  <section id="services">
+    <h2>Available Services</h2>
+    <ul>
+      <li>
+        <span> 📋Doctor Consultation</span>
+      </li>
+      <li>
+        <span> 📋Salon Booking</span>
+      </li>
+      <li>
+        <span> 📋Car Service</span>
+       
+      </li>
+    </ul>
+  </section> <button class="book-appointment" data-service="Car Service">Book Appointment</button>
+
+  <div id="appointment-form-modal" class="modal">
+    <form id="appointment-form" class="form">
+      <h3>Book Your Appointment</h3>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+      <div class="error" id="name-error"></div>
+      <br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <div class="error" id="email-error"></div>
+      <br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" required>
+      <div class="error" id="phone-error"></div>
+      <br>
+
+      <label for="service">Service:</label>
+      <select id="service" required>
+        <option value="Doctor">Doctor</option>
+        <option value="Salon">Salon</option>
+        <option value="Car Service">Car Service</option>
+      </select>
+      <br>
+
+      <label for="date-time">Preferred Date & Time:</label>
+      <input type="datetime-local" id="date-time" required>
+      <div class="error" id="date-time-error"></div>
+      <br>
+
+      <label for="special-requests">Special Requests (Optional):</label>
+      <textarea id="special-requests"></textarea>
+      <br>
+      <label for="terms">
+        <input type="checkbox" id="terms" required> I agree to the terms and conditions
+      </label>
+      <div class="error" id="terms-error"></div>
+
+      <button type="submit">Submit</button>
+    </form>
+    <button id="close-modal">Close</button>
+  </div>
+
+  <section id="appointments">
+    <h2>Booked Appointments</h2>
+    <table id="appointments-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Service</th>
+          <th>Date & Time</th>
+          <th>Status</th>
+          <th>Complete</th> 
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+  </section>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
 
