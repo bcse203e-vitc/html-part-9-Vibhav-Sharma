@@ -1,0 +1,110 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+header {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+}
+
+#services {
+  padding: 20px;
+}
+
+#services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#services li {
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: rgb(255, 249, 249);
+  color:#000000;
+  text-align: left;
+  padding: 20px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-color: #000000;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #000000;
+  color: white;
+}
+
+td {
+  background-color: #ecf0f1;
+  color: black
+}
+.animated-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(98, 0, 234, 0.6) 0%, rgba(0, 0, 0, 0.8) 70%);
+  filter: blur(100px);
+  animation: moveBackground 10s infinite alternate ease-in-out;
+}
+
+@keyframes moveBackground {
+  0% { transform: translate(-20%, -20%); }
+  50% { transform: translate(20%, 20%); }
+  100% { transform: translate(-20%, -20%); }
+}
+
+
+.container{
+  position: relative;
+  color: white;
+  text-align: center;
+}
